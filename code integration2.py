@@ -19,7 +19,10 @@ def voice():
        elif 'docker' in text:
            lapvoice.speak("Opening Docker Containerisation System")
            lapvoice.speak("What docker commands do you want to run")
-           os.system("start chrome 43.204.232.236:8080")
+           os.system('start chrome 43.204.232.236:8080/job/docker/build?token=token')
+           time.sleep(15)
+           os.system("start chrome 43.204.232.236:8080/job/docker/12/console")
+           print('hi')
        elif 'message' in text:
            lapvoice.speak("Sending Whatsapp message, no need for curiosity he doesnt have any girl chats in his whatsapp")
            phone='7093912699'
